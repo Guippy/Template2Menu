@@ -6,63 +6,59 @@ int main(void){
 char Command[] = "cls";
 for(;;){
         int Option1, ScanOption;
-    printf("TEMPLATE TITTLE\nOPTION(1)\nOPTION(2)\nClear(3)\n-->");
+    printf("TEMPLATE TITTLE\nOPTION(1)\nOPTION(2)\n-->");
     ScanOption = scanf("%d", &Option1);
-    if (ScanOption == 0||Option1 <= 0|| Option1 >= 4){
+    if (ScanOption == 0||Option1 <= 0|| Option1 >= 3){
         exit(0);
     }
     switch(Option1){
 case 1:
+    system(Command);
     for(;;){
-    printf("TEMPLATE TITTLE\nOPTION(1)\nOPTION(2)\nClear(3)\nBack(4)\n-->");
+    printf("TEMPLATE TITTLE\nOPTION(1)\nOPTION(2)\nBack(3)\n-->");
     int Option11, ScanOption11;
     ScanOption11 = scanf("%d", &Option11);
-    if (ScanOption11 == 0||Option11 <= 0|| Option11 >= 5){
+    if (ScanOption11 == 0||Option11 <= 0|| Option11 >= 4){
         exit(0);
     }
     switch(Option11){
 case 1:
+    system(Command);
     //OPTION 1-1 BODY GOES HERE
     break;
 case 2:
+    system(Command);
     //OPTION 1-2 BODY GOES HERE
     break;
 case 3:
-    system(Command);
-    break;
-case 4:
     goto Reset;
     break;
     }
     }
     break;
 case 2:
+    system(Command);
     for(;;){
-    printf("TEMPLATE TITTLE\nOPTION(1)\nOPTION(2)\nClear(3)\nBack(4)\n-->");
+    printf("TEMPLATE TITTLE\nOPTION(1)\nOPTION(2)\nBack(3)\n-->");
     int Option21, ScanOption21;
     ScanOption21 = scanf("%d", &Option21);
-    if (ScanOption21 == 0||Option21 <= 0|| Option21 >= 5){
+    if (ScanOption21 == 0||Option21 <= 0|| Option21 >= 4){
         exit(0);
     }
     switch(Option21){
 case 1:
+    system(Command);
     //OPTION 2-1 BODY GOES HERE
     break;
 case 2:
+    system(Command);
     //OPTION 2-2 BODY GOES HERE
     break;
 case 3:
-    system(Command);
-    break;
-case 4:
     goto Reset;
     break;
     }
     }
-    break;
-case 3:
-    system(Command);
-    break;
     }
 Reset:
     system(Command);
